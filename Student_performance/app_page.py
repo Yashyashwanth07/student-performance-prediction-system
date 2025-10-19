@@ -74,7 +74,7 @@ student_features = np.array([[
     income_encoding[family_income], stress_index, sleep_average
 ]])
 
-rf_model = joblib.load('random_forest_model.pkl')
+rf_model = joblib.load('randomforest.pkl')
 xgb_model = joblib.load('xgboost_model.pkl')
 
 if st.button("Get Performance Report"):
@@ -116,3 +116,4 @@ if st.button("Get Performance Report"):
         ax.set_xticklabels(features_labels, rotation=35, ha='right', fontsize=10)
         ax.set_title("Profile Attributes Input Summary")
         st.pyplot(fig)
+
